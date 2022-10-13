@@ -1,0 +1,92 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+ /*Crear Calculadora para resolver ecuaciones lineales y
+cuadraticas*/
+ int tipo=1;
+ float a, b, c, x;
+ double x1, x2, d;
+ printf("\n\n\tResolvamos y clasifiquemos ecuaciones!!!!!!!\n");
+ while(tipo!=0){
+ printf("\n\t\t1 - para ecuacion lineal: ");
+ printf("\n\t\t\ta.x + b = c\n");
+ printf("\n\t\t2 - para ecuacion cuadratica: ");
+ printf("\n\t\t\ta.x^2 + b.x + c = 0\n");
+ printf("\n\tSeleccione el tipo de ecuacion: ");
+ fflush(stdin);
+ scanf("%d", &tipo);
+ printf("\n\tIngresa valor de a: ");
+ fflush(stdin);
+ scanf("%f", &a);
+ printf("\tIngresa valor de b: ");
+ fflush(stdin);
+ scanf("%f", &b);
+ printf("\tIngresa valor de c: ");
+ fflush(stdin);
+ scanf("%f", &c);
+ switch(tipo){
+ case 1:
+ if(a!=0){
+ x=(c-b)/a;
+ printf("\n\tEsta ecuacion se clasifica como Compatible
+Determinada.\n\t");
+ printf("\n\t\t\tEl valor de X es: %g\n", x);
+ printf("\n\t");
+ system ("pause");
+ system("cls");
+ }
+ else{
+ if(a==0&&b==c){
+ printf("\n\tEsta ecuacion se clasifica como
+Compatible Indeterminada.\n\t");
+ }
+ else
+ printf("\n\tEsta ecuacion se clasifica como
+Incompatible.\n\t");
+ }
+ break;
+ case 2:
+ d = pow(b,2)-(4*a*c);
+ printf("\n\tEl valor del discriminante es: %g\n\t", d);
+ if (d>0){
+ x1= (-b + sqrt(d)) / (2*a);
+ x2= (-b - sqrt(d)) / (2*a);
+ printf("\n\tEsta ecuacion tiene 2 soluciones
+distintas.\n\t");
+ printf("\n\t\t\tEl valor de X1 es: %g", x1);
+ printf("\n\t\t\tEl valor de X2 es: %g\n\n\t", x2);
+ system ("pause");
+ system("cls");
+ }
+ else{
+ if(d<0){
+ printf("\n\tEsta ecuacion no tiene solucion en el
+conjunto de numeros Reales\n\t");
+ system ("pause");
+ system("cls");
+ }
+ else{
+ x1= (-b + sqrt(d)) / (2*a);
+ printf("\n\tEsta ecuacion tiene una solucion
+doble\n\t");
+ printf("\n\t\t\tEl valor de X1 y X2 es: %g\n\n\t",
+x1);
+ system ("pause");
+ system("cls");
+ }
+ }
+ break;
+ }
+ printf("\n\tQueres seguir resoviendo y clasificando?\n");
+ printf("\n\t1 para continuar ");
+ printf("\n\t0 para terminar ");
+ fflush(stdin);
+ scanf("%d", &tipo);
+ system("cls");
+ if(tipo==0)
+ printf("\n\tHasta la Proxima!!!\n\n\n" );
+ }
+return 0;
+ }

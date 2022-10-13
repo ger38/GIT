@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1631465321 source:c:\users\pc\desktop\programacion 1\guia matrices ej.nº 1\main.c
+	<stdint.h>
+	<stdio.h>
+

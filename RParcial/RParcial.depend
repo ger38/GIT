@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1637625002 source:c:\users\pc\desktop\programacion 1\rparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"milibreria.h"
+
+1637797420 c:\users\pc\desktop\programacion 1\rparcial\milibreria.h
+	<stdio.h>
+	<stdlib.h>
+

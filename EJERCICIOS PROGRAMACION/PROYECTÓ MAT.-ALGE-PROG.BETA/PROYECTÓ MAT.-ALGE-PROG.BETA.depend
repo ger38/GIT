@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1628734488 source:c:\users\pc\desktop\ejercicios programacion\proyectó mat.-alge-prog.beta\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+

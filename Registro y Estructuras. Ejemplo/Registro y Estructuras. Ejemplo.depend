@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1636066672 source:c:\users\pc\desktop\programacion 1\registro y estructuras. ejemplo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<windows.h>
+	"Funciones.h"
+
+1636068051 c:\users\pc\desktop\programacion 1\registro y estructuras. ejemplo\funciones.h
+

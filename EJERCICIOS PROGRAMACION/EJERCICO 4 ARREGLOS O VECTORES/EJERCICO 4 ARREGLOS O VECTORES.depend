@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1626391756 source:c:\users\pc\desktop\ejercicios programacion\ejercico 4 arreglos o vectores\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+
